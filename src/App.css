@@ -1,0 +1,163 @@
+div.app {
+    /* border: 1px solid red; */
+    width: 25em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+div.app div.name {
+    width: 100%;
+    text-align: center;
+    color: #6a6877;
+    font-size: 1.3em;
+}
+
+
+div.app div.input {
+    width: 100%;
+    background-color: #24232b;
+    padding: 0.8em;
+    position: relative;
+}
+
+div.app div.input span.copyIcon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #9df1a5;
+    cursor: pointer;
+    transition: 0.1s all;
+    user-select: none;
+}
+div.app div.input span.copyIcon:hover {
+    color: #9df1a5aa;
+}
+div.app div.input span.copyIcon:active {
+    color: #9df1a588;
+}
+
+div.app div.input input {
+    width: calc(100% - 1.3em);
+    display: block;
+    height: 100%;
+    font-size: 1.5em;
+    background-color: transparent;
+    color: #fff;
+}
+div.app div.input input::placeholder {
+    color: #54535b;
+}
+
+
+div.app div.body {
+    background-color: #24232b;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+div.app div.body div.lengthSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+div.app div.body div.lengthSelector div.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.app div.body div.lengthSelector div.info div.name {
+    text-align: left;
+    color: #eee;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+div.app div.body div.lengthSelector div.info div.n {
+    color: #9df1a5;
+    font-size: 1.5em;
+}
+
+div.app div.body div.slider .sliderInner {
+    /* color: #191820; */
+    color: #9df1a5;
+}
+div.app div.body div.slider .sliderInner .MuiSlider-thumb {
+    color: #000;
+    border: 3px solid #9df1a5;
+    box-shadow: none !important;
+}
+div.app div.body div.slider .sliderInner .MuiSlider-rail {
+    background-color: #000;
+    height: 7px;
+}
+div.app div.body div.slider .sliderInner .MuiSlider-track {
+    border-radius: 0;
+    height: 7px;
+    /* background-color: #191820; */
+    background-color: #9df1a5;
+}
+.MuiSlider-thumb:hover {
+    border: 5px solid #9df1a5 !important;
+}
+.css-jx1sa5-MuiSlider-thumb.Mui-active {
+    color: #9df1a5 !important;
+}
+
+div.app div.body div.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+div.app div.body div.checkboxes div.checkbox {
+    display: flex;
+    gap: 0.7em;
+    color: #eee;
+    align-items: center;
+}
+
+div.app div.body div.checkboxes div.checkbox label {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+div.app div.body div.checkboxes div.checkbox .checkboxInner {
+    width: 10px;
+    height: 10px;
+}
+
+div.app div.body div.checkboxes div.checkbox .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+    color: #9df1a5;
+    background-color: transparent;
+}
+.MuiSvgIcon-root {
+    color: #9df1a5;
+    background-color: transparent;
+}
+
+
+div.app div.body button.generateButton {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #9df1a5;
+    padding: 0.9em;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+div.app div.body button.generateButton:hover {
+    background-color: #9df1a5aa;
+}
+div.app div.body button.generateButton:active {
+    background-color: #9df1a588;
+}
